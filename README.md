@@ -1,3 +1,4 @@
+Prepared using vibe coding . Prepared and deployed to cloudrun within 1 hour.
 # Far. — Gardening Business Website
 
 A full-stack e-commerce site for **Far**, selling gardening equipment, flowers, and pots.
