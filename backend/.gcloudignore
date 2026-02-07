@@ -1,0 +1,10 @@
+# Don't upload venv or local DB to Cloud Build
+venv/
+__pycache__/
+*.pyc
+*.db
+.env
+.env.*
+.git/
+.gitignore
+*.md

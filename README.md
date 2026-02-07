@@ -45,3 +45,7 @@ Optional: create `frontend/.env.local` with `NEXT_PUBLIC_API_URL=http://localhos
 - `GET /api/categories` — list category options
 
 Database file: `backend/far_garden.db` (created on first run).
+
+## Deploy to GCP (Cloud Run)
+
+See **[DEPLOY.md](./DEPLOY.md)** for step-by-step instructions to deploy the backend and frontend to Google Cloud Run.

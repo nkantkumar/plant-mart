@@ -1,10 +1,14 @@
-"""Seed SQLite with sample products. Run: python seed_db.py"""
+"""Seed SQLite with sample products. Idempotent: only inserts if table is empty. Run: python seed_db.py"""
+import sys
 from database import SessionLocal, engine
 from models import Product as ProductModel
 from database import Base
 
 Base.metadata.create_all(bind=engine)
 db = SessionLocal()
+if db.query(ProductModel).count() > 0:
+    db.close()
+    sys.exit(0)
 
 products = [
     ProductModel(
