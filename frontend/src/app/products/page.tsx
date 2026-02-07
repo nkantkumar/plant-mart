@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import Link from "next/link";
 import { fetchProducts } from "@/lib/api";
 
-function ProductGrid({
+async function ProductGrid({
   category,
 }: {
   category?: string;

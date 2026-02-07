@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  --font-display: "Outfit", system-ui, -apple-system, sans-serif;
   --leaf-50: #f0fdf4;
   --leaf-100: #dcfce7;
   --leaf-200: #bbf7d0;
