@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+backend/venv/
+backend/__pycache__/
+backend/*.pyc
+
+# Build / runtime
+frontend/.next/
+frontend/out/
+*.db
+backend/far_garden.db
+
+# Env
+.env
+.env.local
+.env*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+.DS_Store
