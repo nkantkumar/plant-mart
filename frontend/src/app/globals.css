@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --leaf-50: #f0fdf4;
+  --leaf-100: #dcfce7;
+  --leaf-200: #bbf7d0;
+  --leaf-500: #22c55e;
+  --leaf-600: #16a34a;
+  --leaf-700: #15803d;
+  --leaf-800: #166534;
+  --leaf-900: #14532d;
+  --sage-600: #5f6e3e;
+  --sage-700: #4a5c2e;
+}
+
+body {
+  @apply bg-leaf-50 text-leaf-900 antialiased;
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg bg-leaf-600 px-4 py-2.5 font-medium text-white shadow-sm transition hover:bg-leaf-700 focus:outline-none focus:ring-2 focus:ring-leaf-500 focus:ring-offset-2;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-lg border-2 border-leaf-600 bg-transparent px-4 py-2.5 font-medium text-leaf-700 transition hover:bg-leaf-100 focus:outline-none focus:ring-2 focus:ring-leaf-500 focus:ring-offset-2;
+  }
+  .card {
+    @apply rounded-xl border border-leaf-200 bg-white shadow-sm transition hover:shadow-md hover:border-leaf-300;
+  }
+}
